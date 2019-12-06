@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="ordenarSpinner">
+        <item><b>Ordenar por</b></item>
         <item>Destacados</item>
-        <item>Precio</item>
-        <item>Estrellas</item>>
-        <item>Puntuacion</item>
-        <item>Distancia al centro</item>
+        <item>Precio(mas bajo primero)</item>
+        <item>Precio(mas alto primero)</item>
+        <item>Estrellas(mas estrellas primero)</item>>
+        <item>Mejor Puntuados</item>
+        <item>Menor Distancia al centro</item>
         <item>Mas valorados</item>
     </string-array>
 </resources>
