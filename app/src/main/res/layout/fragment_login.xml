@@ -3,26 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ProfileFragment">
-
+    tools:context=".LoginFragment">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/profile"
+        android:text="Iniciar Sesión"
         android:textSize="36sp" />
 
-    <Button
-        android:id="@+id/buttonLogOut"
-        android:layout_width="187dp"
-        android:layout_height="78dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Cerrar Sesión" />
 </LinearLayout>

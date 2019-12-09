@@ -7,7 +7,6 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_empty_search.*
 
 class MainActivity : AppCompatActivity() {
 

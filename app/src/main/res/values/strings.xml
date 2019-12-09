@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">BuscaHoteles</string>
-    <string name="search">Search</string>
-    <string name="calendar">Calendar</string>
-    <string name="favorites">Favorites</string>
-    <string name="profile">Profile</string>
+    <string name="search">Buscar</string>
+    <string name="calendar">Reservas</string>
+    <string name="favorites">Favoritos</string>
+    <string name="profile">Perfil</string>
 </resources>

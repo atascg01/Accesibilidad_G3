@@ -6,8 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import kotlinx.android.synthetic.main.fragment_empty_search.view.*
+import android.widget.Button
 
 /**
  * A simple [Fragment] subclass.
@@ -20,13 +19,21 @@ class EmptySearchFragment : Fragment() {
     ): View? {
 
         val view: View = inflater!!.inflate(R.layout.fragment_empty_search, container, false)
-        view.buttonFind.setOnClickListener{ view ->
-            // Change fragment view
+
+        val btn = view.findViewById<View>(R.id.buttonFind) as Button
+
+        btn.setOnClickListener {
+            val fragment = SearchFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
         }
 
+        return view
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_empty_search, container, false)
+        return view
     }
-
-
 }
