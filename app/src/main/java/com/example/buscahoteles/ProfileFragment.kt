@@ -32,8 +32,5 @@ class ProfileFragment : Fragment() {
         }
 
         return view
-
-        // Inflate the layout for this fragment
-        return view
     }
 }
