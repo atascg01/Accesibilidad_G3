@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationSearch"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/navigationCalendar"
+        android:icon="@drawable/ic_date_range"
+        android:title="@string/calendar" />
+
+    <item
+        android:id="@+id/navigationFavorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorites" />
+
+    <item
+        android:id="@+id/navigationProfile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+
+</menu>
