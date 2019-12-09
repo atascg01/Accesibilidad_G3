@@ -3,8 +3,11 @@ package com.example.buscahoteles
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_empty_search.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Load first fragment by default
-        loadFragment(SearchFragment())
+        loadFragment(EmptySearchFragment())
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when {
