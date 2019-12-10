@@ -46,6 +46,14 @@ class ProfileEditFragment : Fragment() {
 
         buttonConfirm.setOnClickListener {
             //TODO Change profile data
+            val fragment = ProfileFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+
+            /*
             val viewProfile: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
             val tvUsername_profile = viewProfile.findViewById<View>(R.id.tvUsername_profile) as TextView
             val tvName_profile = viewProfile.findViewById<View>(R.id.tvName_profile) as TextView
@@ -60,13 +68,8 @@ class ProfileEditFragment : Fragment() {
             for(i in 0 until editTexts.size){
                 textViews[i].text = editTexts[i].text
             }
-
-            val fragment = ProfileFragment()
-            val fragmentManager = activity!!.supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragmentContainer, fragment)
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
+            */
+             
         }
 
         return view
