@@ -48,8 +48,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvUsername_profile"
+                <EditText
+                    android:id="@+id/edUsername_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -68,8 +68,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvName_profile"
+                <EditText
+                    android:id="@+id/edName_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -88,8 +88,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvSurname_profile"
+                <EditText
+                    android:id="@+id/edSurname_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -109,8 +109,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvEmail_profile"
+                <EditText
+                    android:id="@+id/edEmail_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -129,8 +129,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvPhone_profile"
+                <EditText
+                    android:id="@+id/edPhone_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -150,8 +150,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvAge_profile"
+                <EditText
+                    android:id="@+id/edAge_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -171,8 +171,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvAddress_profile"
+                <EditText
+                    android:id="@+id/edAddress_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -192,8 +192,8 @@
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed-medium" />
 
-                <TextView
-                    android:id="@+id/tvReserves_profile"
+                <EditText
+                    android:id="@+id/edReserves_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15dp"
@@ -217,8 +217,8 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="5dp"
                         android:gravity="center"
-                        android:text="EDITAR PERFIL"
-                        app:backgroundTint="#3CB371" />
+                        android:text="Cancelar"
+                        app:backgroundTint="#DC143C" />
 
                     <Button
                         android:id="@+id/buttonConfirm"
@@ -227,7 +227,7 @@
                         android:layout_gravity="right"
                         android:layout_marginRight="10dp"
                         android:gravity="center"
-                        android:text="Cerrar Sesión"
+                        android:text="Confirmar"
                         app:backgroundTint="#3CB371" />
                 </LinearLayout>
 

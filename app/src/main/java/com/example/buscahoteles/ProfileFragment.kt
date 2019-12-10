@@ -20,10 +20,19 @@ class ProfileFragment : Fragment() {
 
         val view: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
 
-        val btn = view.findViewById<View>(R.id.buttonLogOut) as Button
-
-        btn.setOnClickListener {
+        val buttonLogOut = view.findViewById<View>(R.id.buttonConfirm) as Button
+        val buttonEditProfile = view.findViewById<View>(R.id.buttonCancel) as Button
+        buttonLogOut.setOnClickListener {
             val fragment = LoginFragment()
+            val fragmentManager = activity!!.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
+
+        buttonEditProfile.setOnClickListener{
+            val fragment = ProfileEditFragment()
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragmentContainer, fragment)
