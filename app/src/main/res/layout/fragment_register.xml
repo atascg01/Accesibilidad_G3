@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Registro"
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="serif" />
+
+        <EditText
+            android:id="@+id/etUsername_register"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Nombre de usuario *"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPassword_register"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Contraseña *"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etEmail_register"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Email *"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etMobile_register"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Teléfono *"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etName_register"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Apellidos"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Dirección"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvForcedText"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="* Campos obligatorios" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Acepto los términos de uso y la política de privacidad" />
+
+        <Button
+            android:id="@+id/buttonRegister_register"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="REGISTRARSE"
+            app:backgroundTint="#3CB371" />
+
+        <LinearLayout
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="¿Ya tienes cuenta?" />
+
+            <TextView
+                android:id="@+id/tvLogin_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Iniciar sesión"
+                android:textColor="#0000FF"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

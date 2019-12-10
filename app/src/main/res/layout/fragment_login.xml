@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -31,7 +29,7 @@
             android:textStyle="italic" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/etUsername_login"
             android:layout_width="308dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -41,7 +39,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etPasswd_login"
             android:layout_width="308dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
@@ -51,18 +49,20 @@
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_gravity="center"
             android:layout_width="300dp"
-            android:layout_marginTop="25dp"
             android:layout_height="wrap_content"
-            android:text="Iniciar Sesión" />
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Iniciar Sesión"
+            app:backgroundTint="#3CB371" />
 
         <Button
             android:id="@+id/buttonRegister"
             android:layout_width="300dp"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:text="Registrarse" />
+            android:layout_gravity="center"
+            android:text="Registrarse"
+            app:backgroundTint="#3CB371" />
 
     </LinearLayout>
 
