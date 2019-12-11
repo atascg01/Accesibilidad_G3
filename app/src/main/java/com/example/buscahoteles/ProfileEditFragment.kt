@@ -69,7 +69,7 @@ class ProfileEditFragment : Fragment() {
                 textViews[i].text = editTexts[i].text
             }
             */
-             
+
         }
 
         return view

@@ -1,7 +1,9 @@
 package com.example.buscahoteles
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
@@ -10,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    private var logged : Boolean = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -32,8 +35,15 @@ class MainActivity : AppCompatActivity() {
                     return@setOnNavigationItemSelectedListener true
                 }
                 menuItem.itemId == R.id.navigationProfile -> {
-                    loadFragment(ProfileFragment())
-                    return@setOnNavigationItemSelectedListener true
+                    if(logged){
+                        val storageIntent = Intent(this, ProfileFragment::class.java)
+                        storageIntent.putExtra("login", logged)
+                        loadFragment(ProfileFragment())
+                        return@setOnNavigationItemSelectedListener true
+                    }else{
+                        loadFragment(LoginFragment())
+                        return@setOnNavigationItemSelectedListener true
+                    }
                 }
                 else -> {
                     return@setOnNavigationItemSelectedListener false
@@ -47,5 +57,9 @@ class MainActivity : AppCompatActivity() {
             fragmentTransaction.replace(R.id.fragmentContainer, fragment)
             fragmentTransaction.commit()
         }
+    }
+
+    private fun setLogged(loggeds: Boolean){
+        this.logged = loggeds
     }
 }

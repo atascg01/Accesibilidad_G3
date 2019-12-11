@@ -1,6 +1,7 @@
 package com.example.buscahoteles
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,12 +15,13 @@ import android.widget.Button
 class ProfileFragment : Fragment() {
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
 
         val view: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
-
         val buttonLogOut = view.findViewById<View>(R.id.buttonConfirm) as Button
         val buttonEditProfile = view.findViewById<View>(R.id.buttonCancel) as Button
         buttonLogOut.setOnClickListener {
@@ -39,6 +41,7 @@ class ProfileFragment : Fragment() {
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
+
 
         return view
     }
