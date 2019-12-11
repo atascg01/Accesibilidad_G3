@@ -215,6 +215,7 @@
                         android:layout_width="187dp"
                         android:layout_height="70dp"
                         android:layout_marginRight="5dp"
+                        android:gravity="center"
                         android:text="EDITAR PERFIL"
                         app:backgroundTint="#3CB371" />
 
@@ -223,6 +224,7 @@
                         android:layout_width="187dp"
                         android:layout_height="70dp"
                         android:layout_marginLeft="5dp"
+                        android:gravity="center"
                         android:text="Cerrar Sesión"
                         app:backgroundTint="#3CB371" />
                 </LinearLayout>

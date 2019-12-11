@@ -9,9 +9,9 @@
 
 
     <Space
-        android:id="@+id/space"
+        android:id="@+id/space0"
         android:layout_width="match_parent"
-        android:layout_height="280dp" />
+        android:layout_height="81dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -19,15 +19,96 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center_vertical"
         android:gravity="center"
-        android:text="Búsqueda vacía"
-        android:textSize="36sp" />
+        android:text="¿Buscas un hotel?"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/etDestination"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Destino"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ida"
+                android:textSize="18sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:foregroundGravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Vuelta"
+                android:textSize="18sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:foregroundGravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="98dp" />
 
     <Button
         android:id="@+id/buttonFind"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_width="199dp"
+        android:layout_height="109dp"
         android:layout_gravity="center|center_vertical"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:text="Buscar" />
+        android:text="Buscar"
+        android:textSize="24sp" />
 </LinearLayout>
