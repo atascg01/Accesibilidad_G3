@@ -4,4 +4,28 @@
     <string name="calendar">Reservas</string>
     <string name="favorites">Favoritos</string>
     <string name="profile">Perfil</string>
+
+    <string name="ordenar_prompt">Ordenar</string>
+    <string-array name="ordenar_array">
+        <item>Nuestros destacados</item>
+        <item>Más baratos primero</item>
+        <item>Más caros primero</item>
+        <item>Mejor puntuación</item>
+        <item>Más estrellas</item>
+        <item>Mejores valoraciones</item>
+        <item>Menor distancia al centro</item>
+    </string-array>
+
+    <string name="filtrar_prompt">Filtrar</string>
+    <string-array name="filtrar_array">
+        <item>Desayuno incluido</item>
+        <item>Menos de 1km de distancia al centro</item>
+        <item>Cancelación gratis</item>
+        <item>Con párking</item>
+        <item>Mascotas permitidas</item>
+        <item>3 estrellas o menos</item>
+        <item>4 estrellas o más</item>
+        <item>Con piscina</item>
+        <item>Buffet apto para veganos</item>
+    </string-array>
 </resources>
