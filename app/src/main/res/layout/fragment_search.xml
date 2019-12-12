@@ -124,15 +124,28 @@
                         android:text="Opiniones (4.6/5)"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Reservar" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Reservar"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Favorito"
+                            android:textSize="12sp"
+                            app:backgroundTint="#C4E2949D" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -209,15 +222,27 @@
                         android:text="Opiniones (3.2/5)"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Reservar" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button22"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Reservar"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Favorito"
+                            android:textSize="12sp"
+                            app:backgroundTint="#C4E2949D" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -294,15 +319,27 @@
                         android:text="Opiniones (4.5/5)"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Reservar" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button33"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Reservar"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button73"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Favorito"
+                            android:textSize="12sp"
+                            app:backgroundTint="#C4E2949D" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -379,15 +416,27 @@
                         android:text="Opiniones (4.8/5)"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Reservar" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button44"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Reservar"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Favorito"
+                            android:textSize="12sp"
+                            app:backgroundTint="#C4E2949D" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -464,15 +513,27 @@
                         android:text="Opiniones (3.8/5)"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Reservar" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button55"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Reservar"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button75"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Favorito"
+                            android:textSize="12sp"
+                            app:backgroundTint="#C4E2949D" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -549,15 +610,27 @@
                         android:text="Opiniones (4.2/5)"
                         android:textSize="18sp" />
 
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Reservar" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button66"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:text="Reservar"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/button76"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Favorito"
+                            android:textSize="12sp"
+                            app:backgroundTint="#C4E2949D" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
