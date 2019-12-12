@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SearchFragment" >
+    tools:context=".SearchFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="98dp"
+        android:layout_height="80dp"
+        android:background="#667E8385"
         android:orientation="horizontal">
 
         <Spinner
@@ -42,7 +43,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="32dp" />
+        android:layout_height="20dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -52,307 +53,282 @@
             android:id="@+id/hotelsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
-            android:id="@+id/hotel2"
-            android:layout_width="match_parent"
-            android:layout_height="180dp">
-
-            <LinearLayout
-                android:layout_width="183dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="158dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Hotel PICO *****"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/imageView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="115dp"
-                    android:layout_gravity="center|left"
-                    android:layout_weight="1"
-                    android:foregroundGravity="center"
-                    app:srcCompat="@drawable/hotel"
-                    tools:src="@tools:sample/backgrounds/scenic[2]" />
-            </LinearLayout>
-
-            <LinearLayout
+                android:id="@+id/hotel"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="180dp"
+                android:background="#BCCADF">
 
-                <TextView
-                    android:id="@+id/textView172"
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hotel PICO\n *****"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/hotel"
+                        tools:src="@tools:sample/backgrounds/scenic[2]" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="34euros/noche"
-                    android:textSize="26sp" />
-
-                <TextView
-                    android:id="@+id/textView182"
-                    android:layout_width="match_parent"
-                    android:layout_height="33dp"
-                    android:layout_gravity="center"
-                    android:gravity="left"
-                    android:text="1.6km del centro"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/textView192"
-                    android:layout_width="match_parent"
-                    android:layout_height="39dp"
-                    android:layout_gravity="center"
-                    android:gravity="right"
-                    android:text="Opiniones (3.6/5)"
-                    android:textSize="18sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-
-            <LinearLayout
-                android:id="@+id/hotel13"
-                android:layout_width="match_parent"
-                android:layout_height="180dp">
-
-                <LinearLayout
-                    android:layout_width="183dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView23"
-                        android:layout_width="158dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Hotel PICO *****"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView43"
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center|left"
-                        android:layout_weight="1"
-                        android:foregroundGravity="center"
-                        app:srcCompat="@drawable/hotel"
-                        tools:src="@tools:sample/backgrounds/scenic[3]" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView173"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="34euros/noche"
-                        android:textSize="26sp" />
-
-                    <TextView
-                        android:id="@+id/textView183"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:layout_gravity="center"
-                        android:gravity="left"
-                        android:text="1.6km del centro"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView193"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:layout_gravity="center"
-                        android:gravity="right"
-                        android:text="Opiniones (3.6/5)"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-
-            <LinearLayout
-                android:id="@+id/hotel14"
-                android:layout_width="match_parent"
-                android:layout_height="180dp">
-
-                <LinearLayout
-                    android:layout_width="183dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView24"
-                        android:layout_width="158dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Hotel PICO *****"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView44"
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center|left"
-                        android:layout_weight="1"
-                        android:foregroundGravity="center"
-                        app:srcCompat="@drawable/hotel"
-                        tools:src="@tools:sample/backgrounds/scenic[4]" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView174"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="34euros/noche"
-                        android:textSize="26sp" />
-
-                    <TextView
-                        android:id="@+id/textView184"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:layout_gravity="center"
-                        android:gravity="left"
-                        android:text="1.6km del centro"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView194"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:layout_gravity="center"
-                        android:gravity="right"
-                        android:text="Opiniones (3.6/5)"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-
-            <LinearLayout
-                android:id="@+id/hotel15"
-                android:layout_width="match_parent"
-                android:layout_height="180dp">
-
-                <LinearLayout
-                    android:layout_width="183dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView25"
-                        android:layout_width="158dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Hotel PICO *****"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView45"
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center|left"
-                        android:layout_weight="1"
-                        android:foregroundGravity="center"
-                        app:srcCompat="@drawable/hotel"
-                        tools:src="@tools:sample/backgrounds/scenic[5]" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView175"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="34euros/noche"
-                        android:textSize="26sp" />
-
-                    <TextView
-                        android:id="@+id/textView185"
-                        android:layout_width="match_parent"
-                        android:layout_height="33dp"
-                        android:layout_gravity="center"
-                        android:gravity="left"
-                        android:text="1.6km del centro"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView195"
-                        android:layout_width="match_parent"
-                        android:layout_height="39dp"
-                        android:layout_gravity="center"
-                        android:gravity="right"
-                        android:text="Opiniones (3.6/5)"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-
-
-            <LinearLayout
-                android:id="@+id/hotel1"
-                android:layout_width="match_parent"
-                android:layout_height="180dp">
-
-                <LinearLayout
-                    android:layout_width="183dp"
-                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="34euros/noche"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="1.6km del centro"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Opiniones (4.6/5)"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reservar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:id="@+id/hotel2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#BCCADF">
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView22"
                         android:layout_width="158dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Hotel PICO *****"
+                        android:text="Hotel BUENAVISTA\n ***"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/hotel2"
+                        tools:src="@tools:sample/backgrounds/scenic[2]" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView222"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="22euros/noche"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="2.4km del centro"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Opiniones (3.2/5)"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reservar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:id="@+id/hotel3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#BCCADF">
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hotel LINK\n ****"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/hotel3"
+                        tools:src="@tools:sample/backgrounds/scenic[2]" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="28euros/noche"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/textView333"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="0.4km del centro"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Opiniones (4.5/5)"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reservar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:id="@+id/hotel4"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#BCCADF">
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hotel AURA\n *****"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -363,47 +339,235 @@
                         android:layout_gravity="center|left"
                         android:layout_weight="1"
                         android:foregroundGravity="center"
-                        app:srcCompat="@drawable/hotel"
-                        tools:src="@tools:sample/backgrounds/scenic[14]" />
+                        app:srcCompat="@drawable/hotel4"
+                        tools:src="@tools:sample/backgrounds/scenic[2]" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView17"
+                        android:id="@+id/textView24"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="56dp"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="34euros/noche"
+                        android:text="42euros/noche"
                         android:textSize="26sp" />
 
                     <TextView
-                        android:id="@+id/textView18"
+                        android:id="@+id/textView34"
                         android:layout_width="match_parent"
                         android:layout_height="33dp"
                         android:layout_gravity="center"
                         android:gravity="left"
-                        android:text="1.6km del centro"
+                        android:paddingLeft="10dp"
+                        android:text="6.8km del centro"
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/textView444"
                         android:layout_width="match_parent"
                         android:layout_height="39dp"
                         android:layout_gravity="center"
                         android:gravity="right"
-                        android:text="Opiniones (3.6/5)"
+                        android:paddingRight="10dp"
+                        android:text="Opiniones (4.8/5)"
                         android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reservar" />
                 </LinearLayout>
             </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="40dp" />
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:id="@+id/hotel5"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#BCCADF">
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hotel DESCANSO\n ***"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/hotel5"
+                        tools:src="@tools:sample/backgrounds/scenic[2]" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="18euros/noche"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="2.7km del centro"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Opiniones (3.8/5)"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reservar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:id="@+id/hotel6"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#BCCADF">
+
+                <LinearLayout
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Hotel PLUMA\n ****"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        app:srcCompat="@drawable/hotel6"
+                        tools:src="@tools:sample/backgrounds/scenic[2]" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="32euros/noche"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="0.8km del centro"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Opiniones (4.2/5)"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Reservar" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
         </LinearLayout>
 
     </ScrollView>
