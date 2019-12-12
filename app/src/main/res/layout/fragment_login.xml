@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Registrarse"
-            app:backgroundTint="#3CB371" />
+            app:backgroundTint="@color/colorPrimary" />
 
     </LinearLayout>
 

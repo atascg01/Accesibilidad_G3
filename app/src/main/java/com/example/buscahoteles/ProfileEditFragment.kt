@@ -29,11 +29,10 @@ class ProfileEditFragment : Fragment() {
         val edSurname_edit = view.findViewById<View>(R.id.edSurname_edit) as EditText
         val edEmail_edit = view.findViewById<View>(R.id.edEmail_edit) as EditText
         val edPhone_edit = view.findViewById<View>(R.id.edPhone_edit) as EditText
-        val edAge_edit = view.findViewById<View>(R.id.edAge_edit) as EditText
         val edAddress_edit = view.findViewById<View>(R.id.edAddress_edit) as EditText
 
         val editTexts: Array<EditText> = arrayOf(edUsername_edit, edName_edit, edSurname_edit, edEmail_edit,
-            edPhone_edit, edAge_edit, edAddress_edit)
+            edPhone_edit, edAddress_edit)
 
         buttonCancel.setOnClickListener {
             val fragment = ProfileFragment()
