@@ -1,6 +1,7 @@
 package com.example.buscahoteles
 
 
+import android.app.AlertDialog
 import android.graphics.Color
 import android.os.Bundle
 import android.provider.ContactsContract
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_login.*
 
 /**
@@ -38,6 +40,14 @@ class LoginFragment : Fragment() {
             }else{
                 etUsername.setHintTextColor(Color.RED)
                 etPasswd.setHintTextColor(Color.RED)
+                val builder = AlertDialog.Builder(context)
+                builder.setTitle("Error")
+                builder.setMessage("Por favor, rellene todos los campos.")
+                builder.setPositiveButton(android.R.string.yes) { dialog, which ->
+                    Toast.makeText(context,
+                        android.R.string.yes, Toast.LENGTH_SHORT).show()
+                }
+                builder.show()
             }
 
         }

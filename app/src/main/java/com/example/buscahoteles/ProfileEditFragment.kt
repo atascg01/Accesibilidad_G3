@@ -1,5 +1,7 @@
 package com.example.buscahoteles
 
+import android.app.AlertDialog
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import org.w3c.dom.Text
 
 /**
@@ -24,15 +27,8 @@ class ProfileEditFragment : Fragment() {
 
         val buttonCancel = view.findViewById<View>(R.id.buttonCancel) as Button
         val buttonConfirm = view.findViewById<View>(R.id.buttonConfirm) as Button
-        val edUsername_edit = view.findViewById<View>(R.id.edUsername_edit) as EditText
-        val edName_edit = view.findViewById<View>(R.id.edName_edit) as EditText
-        val edSurname_edit = view.findViewById<View>(R.id.edSurname_edit) as EditText
-        val edEmail_edit = view.findViewById<View>(R.id.edEmail_edit) as EditText
-        val edPhone_edit = view.findViewById<View>(R.id.edPhone_edit) as EditText
-        val edAddress_edit = view.findViewById<View>(R.id.edAddress_edit) as EditText
-
-        val editTexts: Array<EditText> = arrayOf(edUsername_edit, edName_edit, edSurname_edit, edEmail_edit,
-            edPhone_edit, edAddress_edit)
+        val etPassword1 = view.findViewById<View>(R.id.etPassword1_edit) as EditText
+        val etPassword2 = view.findViewById<View>(R.id.etPassword2_edit) as EditText
 
         buttonCancel.setOnClickListener {
             val fragment = ProfileFragment()
@@ -45,12 +41,38 @@ class ProfileEditFragment : Fragment() {
 
         buttonConfirm.setOnClickListener {
             //TODO Change profile data
-            val fragment = ProfileFragment()
-            val fragmentManager = activity!!.supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragmentContainer, fragment)
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
+
+            if( (etPassword1.text.isEmpty() || etPassword2.text.isEmpty()) || (!etPassword1.text.toString().equals(etPassword2.text.toString()))){
+                if(etPassword1.text.isEmpty() || etPassword2.text.isEmpty()) {
+                    if(etPassword1.text.isEmpty()) {
+                        etPassword1.hint = "Campo vacío"
+                        etPassword1.setHintTextColor(Color.RED)
+                    }
+                    if(etPassword2.text.isEmpty()) {
+                        etPassword2.hint = "Campo vacío"
+                        etPassword2.setHintTextColor(Color.RED)
+                    }
+                }
+                if (!etPassword1.text.toString().equals(etPassword2.text.toString())) {
+                    val builder = AlertDialog.Builder(context)
+                    builder.setTitle("Error")
+                    builder.setMessage("Las contraseñas no coinciden.")
+                    builder.setPositiveButton(android.R.string.yes) { dialog, which ->
+                        Toast.makeText(context,
+                            android.R.string.yes, Toast.LENGTH_SHORT).show()
+                    }
+                    builder.show()
+                }
+            }
+            else{
+                val fragment = ProfileFragment()
+                val fragmentManager = activity!!.supportFragmentManager
+                val fragmentTransaction = fragmentManager.beginTransaction()
+                fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+                fragmentTransaction.addToBackStack(null)
+                fragmentTransaction.commit()
+            }
+
 
             /*
             val viewProfile: View = inflater!!.inflate(R.layout.fragment_profile, container, false)

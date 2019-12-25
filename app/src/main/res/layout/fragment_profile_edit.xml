@@ -83,8 +83,31 @@
                 app:fontFamily="serif-monospace" />
 
             <EditText
+                android:id="@+id/etPassword1_edit"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/etPassword2_edit"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Repite contraseña"
+                android:inputType="textPassword"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
                 android:id="@+id/edPhone_edit"
-                android:layout_width="363dp"
+                android:layout_width="361dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="15dp"

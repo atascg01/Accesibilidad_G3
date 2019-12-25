@@ -1,16 +1,14 @@
 package com.example.buscahoteles
 
 
+import android.app.AlertDialog
 import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
 
 /**
  * A simple [Fragment] subclass.
@@ -41,6 +39,14 @@ class RegisterFragment : Fragment() {
                 fragmentTransaction.addToBackStack(null)
                 fragmentTransaction.commit()
             }else{
+                val builder = AlertDialog.Builder(context)
+                builder.setTitle("Error")
+                builder.setMessage("Por favor, rellene todos los campos.")
+                builder.setPositiveButton(android.R.string.yes) { dialog, which ->
+                    Toast.makeText(context,
+                        android.R.string.yes, Toast.LENGTH_SHORT).show()
+                }
+                builder.show()
                 tvForcedText.setTextColor(Color.RED)
                 val components: Array<EditText> = arrayOf(etName, etMobile, etEmail, etPasswd)
                 for (i in components){
