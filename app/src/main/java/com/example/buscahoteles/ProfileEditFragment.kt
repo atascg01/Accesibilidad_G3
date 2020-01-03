@@ -42,24 +42,12 @@ class ProfileEditFragment : Fragment() {
         buttonConfirm.setOnClickListener {
             //TODO Change profile data
 
-            if( (etPassword1.text.isEmpty() || etPassword2.text.isEmpty()) || (!etPassword1.text.toString().equals(etPassword2.text.toString()))){
-                if(etPassword1.text.isEmpty() || etPassword2.text.isEmpty()) {
-                    if(etPassword1.text.isEmpty()) {
-                        etPassword1.hint = "Campo vacío"
-                        etPassword1.setHintTextColor(Color.RED)
-                    }
-                    if(etPassword2.text.isEmpty()) {
-                        etPassword2.hint = "Campo vacío"
-                        etPassword2.setHintTextColor(Color.RED)
-                    }
-                }
+            if((!etPassword1.text.toString().equals(etPassword2.text.toString()))){
                 if (!etPassword1.text.toString().equals(etPassword2.text.toString())) {
                     val builder = AlertDialog.Builder(context)
                     builder.setTitle("Error")
                     builder.setMessage("Las contraseñas no coinciden.")
                     builder.setPositiveButton(android.R.string.yes) { dialog, which ->
-                        Toast.makeText(context,
-                            android.R.string.yes, Toast.LENGTH_SHORT).show()
                     }
                     builder.show()
                 }

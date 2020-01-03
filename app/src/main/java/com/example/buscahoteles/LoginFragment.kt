@@ -43,9 +43,8 @@ class LoginFragment : Fragment() {
                 val builder = AlertDialog.Builder(context)
                 builder.setTitle("Error")
                 builder.setMessage("Por favor, rellene todos los campos.")
-                builder.setPositiveButton(android.R.string.yes) { dialog, which ->
-                    Toast.makeText(context,
-                        android.R.string.yes, Toast.LENGTH_SHORT).show()
+                builder.setNegativeButton(android.R.string.yes) { dialog, which ->
+
                 }
                 builder.show()
             }
